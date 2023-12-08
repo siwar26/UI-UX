@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Aléatoire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio controls id="music" style="display: none;">
+        <source src="rain.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div id="content" onclick="playAudio()">
+        <h1>Bienvenue sur notre site aléatoire !</h1>
+        <p>"Explorez l'incroyable variété climatique à travers notre site, où chaque connexion offre une expérience visuelle unique, reflétant la diversité des climats de notre planète. Embarquez pour un voyage virtuel à travers des designs éphémères, illustrant la beauté changeante de notre atmosphère à chaque rafraîchissement de page.".</p>
+        
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var myMusic = document.getElementById("music");
+
+        function playAudio(){
+            myMusic.play();
+        }
+    </script>
+</body>
+
+</html>
